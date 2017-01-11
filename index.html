@@ -21,16 +21,10 @@
 
          </div>
          <div class="form-group">
-             <button class="btn btn-default">Check If Too Much</button>
+             <button ng-click="feedBack(returnLength(splitString(name)))" class="btn btn-default">Check If Too Much</button>
          </div>
          <div class="form-group message">
-           text whatever {{name}}
-           <br>
-           {{splitString(name)}}
-           <br>
-           {{returnLength(splitString(name))}}
-           <br>
-           {{feedBack(returnLength(splitString(name)))}}
+             {{tellMe}}
          </div>
    </div>
 

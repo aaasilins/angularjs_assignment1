@@ -7,7 +7,7 @@
   LunchCheckController.$inject = ['$scope'];
 
   function LunchCheckController($scope) {
-    $scope.name = "Test";
+    $scope.name = "";
 
     $scope.splitString = function(stringToSplit) {
       var arrayOfStrings = stringToSplit.split(' ');
@@ -21,13 +21,11 @@
     };
 
     $scope.feedBack = function(amountOfFood) {
-      var tellMe = " ";
       if (amountOfFood <= '3') {
-        tellMe = "Enjoy";
+        $scope.tellMe = "Enjoy";
       } else {
-        tellMe = "Too much";
+        $scope.tellMe = "Too much";
       }
-      return tellMe;
 
     };
 
